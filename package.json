@@ -1,27 +1,30 @@
 {
-  "name": "physics-trivia",
-  "version": "1.0.0",
-  "description": "Physics Trivia for school",
-  "main": "index.js",
-  "scripts": {
-    "test": "nodemon index.js"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/fwipsity/Physics-Trivia.git"
-  },
-  "author": "",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/fwipsity/Physics-Trivia/issues"
-  },
-  "homepage": "https://github.com/fwipsity/Physics-Trivia#readme",
-  "dependencies": {
-    "express": "^4.17.1"
-  },
-  "devDependencies": {
-    "@types/node": "^15.6.1",
-    "nodemon": "^2.0.7",
-    "typescript": "^4.3.2"
-  }
+    "name": "physics-trivia",
+    "version": "1.0.0",
+    "description": "Physics Trivia for school",
+    "main": "./backend/bin/index.js",
+    "scripts": {
+        "test": "nodemon ./backend/bin/index.js",
+        "start": "node ./backend/bin/index.js",
+        "build": "cd frontend && tsc && cd ../backend && tsc"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/fwipsity/Physics-Trivia.git"
+    },
+    "author": "",
+    "license": "MIT",
+    "bugs": {
+        "url": "https://github.com/fwipsity/Physics-Trivia/issues"
+    },
+    "homepage": "https://github.com/fwipsity/Physics-Trivia#readme",
+    "dependencies": {
+        "express": "^4.17.1"
+    },
+    "devDependencies": {
+        "@types/express": "^4.17.12",
+        "@types/node": "^15.6.1",
+        "nodemon": "^2.0.7",
+        "typescript": "^4.3.2"
+    }
 }
