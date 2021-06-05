@@ -25,3 +25,24 @@ section#inGameWindow .row {
     cursor: pointer;
     background-color: #dedfe0 !important;
 }
+
+#score-screen-teams-group div {
+    width: 100%;
+    animation-name: score;
+    animation-duration: 1s;
+}
+
+@keyframes score {
+    from {
+        width: auto;
+    }
+    to {
+        width: 100%;
+    }
+}
+
+#score-screen {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}

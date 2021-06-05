@@ -7,6 +7,7 @@ function endQuestion(){
     setTimeout(() => {
         answerModal.hide();
         currentTeam++;
+        //console.log(currentTeam)
         if(currentTeam >= teamsScoreElements.length){
             currentTeam = 0;
         }
@@ -32,7 +33,9 @@ function endQuestion(){
             nextQuestion();
         }
         else{
-            console.log("stopped");
+            questionContainer.classList.add("d-none");
+            scoreContainer.classList.remove("w-25");
+            scoreContainer.classList.add("w-100");
         }
     }, 2000);
 }

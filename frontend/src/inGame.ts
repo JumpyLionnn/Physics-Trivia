@@ -40,8 +40,8 @@ const emojiDiv = document.getElementById("modal-emoji-div") as HTMLDivElement;
 const answerModal = new bootstrap.Modal(document.getElementById("answer-modal") as HTMLDivElement);
 
 const teamsScoreElements = [
+    (document.querySelector("#team-0 p") as HTMLDivElement),
     (document.querySelector("#team-1 p") as HTMLDivElement),
-    (document.querySelector("#team-2 p") as HTMLDivElement),
 ];
 
 let currentQuestion: Question;
@@ -63,3 +63,7 @@ interface Question{
     answers: string[];
     correctAnswer: string;
 }
+
+const questionContainer = document.getElementById("question-container") as HTMLDivElement;
+
+const scoreContainer = document.getElementById("score-container") as HTMLDivElement;

@@ -15,6 +15,7 @@ async function nextQuestion(){
         timeRemaining -= 30;
         timer.style.width = (timeRemaining / 60000) * 100 + "%";
         if(timeRemaining <= 0){
+
             wrongAnswer();
             endQuestion();
         }
