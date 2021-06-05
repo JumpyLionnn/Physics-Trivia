@@ -1,6 +1,27 @@
+.rtl {
+    direction: rtl;
+}
+
 body {
     background-image: url("../assets/physics.png");
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: 100% 100%;
+}
+
+#timer {
+    height: 1.2rem;
+}
+
+section#inGameWindow .row {
+    --bs-gutter-x: 0;
+}
+
+#teams-group {
+    height: calc(100% - 1rem);
+}
+
+.answer:hover {
+    cursor: pointer;
+    background-color: #dedfe0 !important;
 }

@@ -5,10 +5,11 @@ import path from "path";
 const app = express();
 const port = process.env.PORT || 3000;
 
-const questions = JSON.parse(fs.readFileSync("backend/data/questions.json").toString());
+const questions = JSON.parse(fs.readFileSync("backend/data/questions.json").toString()) as Question[];
 
 app.use("/assets", express.static("frontend/assets"));
 app.use("/style", express.static("frontend/style"));
+app.use("/bin", express.static("frontend/bin"));
 
 
 app.get("/", (req, res) => {
@@ -26,7 +27,17 @@ app.get("/question/:index", (req, res) => {
     res.status(200).json(questions[questionNumber]);
 });
 
+app.get("/questions", (req, res) => {
+    res.send(questions.length.toString());
+});
+
 
 app.listen(port, () => {
     console.log(`server started at port: ${port}`);
 });
+
+interface Question{
+    question: string;
+    answers: string[];
+    correctAnswer: string;
+}
