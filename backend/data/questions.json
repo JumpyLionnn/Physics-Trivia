@@ -1,76 +1,71 @@
 [{
-        "question": "choose the right number!",
+        "question": "ילד שקל את עצמו ברופא וראה שהוא היה 72 ניוטון. כמה היה שוקל הילד אם הוא היה על הירח?",
         "answers": [
-            "1",
-            "2",
-            "3",
-            "5"
+            "16",
+            "12",
+            "46",
+            "72"
         ],
-        "correctAnswer": "3"
+        "correctAnswer": "12"
     },
     {
-        "question": "choose the right number11111!",
+        "question": "יש בן אדם עם מסת גוף של 100 קילו בגובה 10 מטר מהרצפה. מה כוח המשיכה צריך להיות כדי שאנרגית הגובה שלו תהיה 20000?",
         "answers": [
-            "1",
+            "10",
             "2",
-            "3",
-            "5"
+            "20",
+            "200"
         ],
-        "correctAnswer": "3"
+        "correctAnswer": "20"
     },
     {
-        "question": "choose the right number!",
+        "question": "גשש על הירח בעל משקל של 30 ניוטון נסע 8 מטרים במשך 2 שניות. מה אנרגיית תנועתו?",
         "answers": [
-            "1",
-            "2",
-            "3",
-            "5"
+            "40",
+            "400",
+            "200",
+            "350"
         ],
-        "correctAnswer": "3"
-    }, {
-        "question": "choose the right number!",
+        "correctAnswer": "400"
+    },
+    {
+        "question": "מהי הנוסחה לחשב משקל של גוף?",
         "answers": [
-            "1",
-            "2",
-            "3",
-            "5"
+            "משקל * מסה",
+            "מסה * כוח המשיכה",
+            "מסה ^ 2",
+            "כוח משיכה * אנרגית גובה"
         ],
-        "correctAnswer": "3"
-    }, {
-        "question": "choose the right number!",
+        "correctAnswer": "מסה * כוח המשיכה"
+    },
+    {
+        "question": "מה הנוסחה לחשב כמות אנרגית גובה?",
         "answers": [
-            "1",
-            "2",
-            "3",
-            "5"
+            "גובה * אנרגיה",
+            "גובה * מסה * כוח משיכה",
+            "מסה * כוח המשיכה * 2",
+            "אנרגית התנועה * כוח המשיכה"
         ],
-        "correctAnswer": "3"
-    }, {
-        "question": "choose the right number!",
+        "correctAnswer": "גובה * מסה * כוח משיכה"
+    },
+    {
+        "question": "איך מודדים מהירות?",
         "answers": [
-            "1",
-            "2",
-            "3",
-            "5"
+            "דרך / זמן",
+            "דרך * זמן",
+            "מסה / דרך * זמן",
+            "משקל / דרך * זמן"
         ],
-        "correctAnswer": "3"
-    }, {
-        "question": "choose the right number!",
+        "correctAnswer": "דרך / זמן"
+    },
+    {
+        "question": "אנרגיית התנועה של מכונית שנוסעת על הכביש בכעשרים מטר לשנייה היא 280,000 גאו'ל. מהי המסה של המכונית?",
         "answers": [
-            "1",
-            "2",
-            "3",
-            "5"
+            "1400 ק\"ג",
+            "700 ק\"ג            ",
+            "1400 ניוטון",
+            "7 טון"
         ],
-        "correctAnswer": "3"
-    }, {
-        "question": "choose the right number!",
-        "answers": [
-            "1",
-            "2",
-            "3",
-            "5"
-        ],
-        "correctAnswer": "3"
+        "correctAnswer": "1400 ק\"ג"
     }
 ]

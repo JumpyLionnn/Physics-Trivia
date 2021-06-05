@@ -29,7 +29,7 @@ function endQuestion(){
                 turnDisplay.classList.add("bg-secondary");
                 break;
         }
-        if(currentQuestionIndex < questionsPerTeam * teamsNumber){
+        if(lastQuestionIndexes.length < questionsPerTeam * teamsNumber){
             nextQuestion();
         }
         else{

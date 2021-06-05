@@ -1,8 +1,10 @@
 
 async function nextQuestion(){
-    if(currentQuestionIndex >= questionNumber) return;
+    if(lastQuestionIndexes.length -1 >= questionNumber) return;
+    currentQuestionIndex = getNextQuestionIndex();
     let response = await (await fetch(`/question/${currentQuestionIndex}`)).json() as Question;
-    currentQuestionIndex++;
+    shuffle(response.answers);
+    
     timeRemaining = 60000;
     questionDiv.innerText = response.question;
     for (let i = 0; i < answersElements.length; i++) {
@@ -10,6 +12,7 @@ async function nextQuestion(){
         element.innerText = response.answers[i];
     }
     currentQuestion = response;
+    
 
     currentQuestionInterval = setInterval(() => {
         timeRemaining -= 30;

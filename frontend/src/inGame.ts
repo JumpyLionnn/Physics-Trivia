@@ -46,7 +46,7 @@ const teamsScoreElements = [
 
 let currentQuestion: Question;
 
-let currentQuestionIndex = 0;
+let currentQuestionIndex = -1;
 let currentQuestionInterval: number;
 
 let timeRemaining = 60000;
